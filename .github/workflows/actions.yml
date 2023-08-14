@@ -2,7 +2,7 @@ name: 'Deploy para AWS CloudFormation'
 
 on:
   push:
-    branches: [main, stage]
+    branches: [stage]
   workflow_dispatch:
 
 jobs:
