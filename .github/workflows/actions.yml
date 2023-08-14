@@ -2,12 +2,13 @@ name: 'Deploy para AWS CloudFormation'
 
 on:
   push:
-    branches: [main]
+    branches: [main, stage]
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: staging
     steps:
       - name: Fazer checkout da branch
         uses: actions/checkout@v2
